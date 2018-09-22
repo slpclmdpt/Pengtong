@@ -33,7 +33,7 @@
 	    	this.name=name;
 	    }
 	    public void raiseSalary(double byPercent){
-	    	this.salary=(1+byPercent)*this.salary;
+	    	double afterRaise=byPercent/100*this.salary;
 	    }
 	}
 
@@ -158,7 +158,7 @@
 	     */
 	    public void tripleSalary(Employee employee) {
 	        //write your code here
-	    	employee.salary=employee.salary*3;	    	
+	    	employee.raiseSalary(300);	    	
 	    }
 
 
