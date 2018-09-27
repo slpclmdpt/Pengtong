@@ -13,6 +13,7 @@
 	    double salary;// salary per month
 
 	    // Constructor. Please set all the data in constructor.
+		// score: 2/2
 	    public Employee(String name, int age, Gender gender, double salary) {
 	    	//write your code here
 	    	this.name=name;	
@@ -51,10 +52,11 @@
 	     * If the salary is less than or equal to 8900, the Social Security Tax is 6.2% of the salary.
 	     * If the salary is more than 8900, the Social Security Tax is 6.2% of 106,800.
 	     */
+		//score: 1.5/2
 	    public double socialSecurityTax(Employee employee) {
 	        //write your code here
 	        //salary is more than 0 and less than or equal to 8900 
-	        if(employee.salary>0&&employee.salary<=8900)
+	        if(employee.salary>0&&employee.salary<=8900) //TA: you dont have to do employee.salary>0, becasue employee.salary<=8900 already cover 
 	        {
 	        	double tax=employee.salary*6.2/100;
 	        	System.out.printf("Tax is %f.\n",tax);
@@ -68,7 +70,7 @@
 	        	return tax;
 	        }
 	        //salary is less than 0
-	        else
+	        else //TA: you do not have to cover less than 0, due to employee.salary<=8900 already cover
 	        {
 	        	System.out.println("Salary less than 0,tax does not exist.");
 	        	return -1;
@@ -81,10 +83,11 @@
 	     * If the employee is under 35, rate is 3% of salary; if the employee is between 35 and 50(inclusive), rate is 4% of salary;
 	     * If the employee is between 50 and 60(exclusive), rate is 5% of salary; If the employee is above 60, rate is 6% of salary.
 	     */
+		//score: 1.5/2
 	    public double insuranceCoverage(Employee employee) {
 	        //write your code here
 	        //age under 35 and above 0
-	        if(employee.age<35&&employee.age>0)
+	        if(employee.age<35&&employee.age>0) // TA: don't need employee.age>0, employee.age<35 already cover
 	        {
 	        	double contribution=employee.salary*3/100;
 	        	System.out.printf("Employee %s's contribution is %f.\n",employee.name,contribution);
@@ -112,7 +115,7 @@
 	        	return contribution;
 	        }
 	        //age under or equal to 0
-	        else 
+	        else //TA: do not need age under or equal to 0
 	        {
 	        	System.out.printf("Employee %s's age is incorrect, contribution does not exist.\n",employee.name);
 	        	return -1;
@@ -125,6 +128,7 @@
 	     * For example, Alice's salary is 1000, John's salary is 500, Jenny's salary is 1200, you should print:
 	     * John Alice Jenny
 	     */
+		//score:2/2
 	    public void sortSalary(Employee e1, Employee e2, Employee e3) {
 	        //write your code here
 	        Employee low=e1;
@@ -156,6 +160,7 @@
 	     * Do not change the input of this method.
 	     * Try to add a new method in Employee class: public void raiseSalary(double byPercent)
 	     */
+		//score:2/2
 	    public void tripleSalary(Employee employee) {
 	        //write your code here
 	    	employee.raiseSalary(300);	    	
@@ -163,7 +168,7 @@
 
 
 	    //Extra credit
-
+	//score:2/2
 	    /**
 	     * I have written some code below. What I want is to swap two Employee objects.
 	     * One is Jenny and one is John. But after running it, I got the result below:
