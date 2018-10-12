@@ -1,5 +1,6 @@
 package Assignment3_1;
 
+// nice 5/5
 public class Test {
 	public static void main(String[] args) {
 		// Test of the constructor and accessor method of class Student
