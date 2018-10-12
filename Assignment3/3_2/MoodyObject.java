@@ -6,6 +6,7 @@ public abstract class MoodyObject {
 	protected abstract void expressFeelings();
 
 	// try "I feel " + getMood() + " today!"
+	// And also, don't use `==` for String. Use String.equals()
 	public void queryMood() {
 		// happy
 		if (this.getMood() == "happy") {
