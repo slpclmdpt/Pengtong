@@ -3,6 +3,7 @@ package Assignment3_Extra;
 import java.util.Scanner;
 
 // 1/1
+// Total: 10/10
 public class StringReverse {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
